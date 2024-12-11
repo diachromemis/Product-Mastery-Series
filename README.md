@@ -1,0 +1,2 @@
+This email aims to help you get the most out of your product. We've created a simple and easy-to-follow guide to ensure that you can quickly set up and start using your new item with confidence. We understand that trying something new can feel overwhelming, but rest assured, we are here to walk you through every step. Follow the instructions, and you’ll be enjoying your purchase in no time. If you need further assistance, don’t hesitate to reach out to us—we’re here to help!
+
