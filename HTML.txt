@@ -1,0 +1,241 @@
+/* Reset CSS (đảm bảo các trình duyệt hiển thị đồng nhất) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Thiết lập font chữ mặc định */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f9; /* Màu nền sáng cho trang */
+    color: #333; /* Màu chữ chính */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2C3E50; /* Màu nền tối cho header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #34495E;
+    padding: 15px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0 20px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #1abc9c; /* Màu nhấn khi hover */
+}
+
+/* Hero Section (Phần Banner chính) */
+.hero-section {
+    background-image: url('path_to_hero_image.jpg'); /* Đặt ảnh nền */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 15px;
+}
+
+.hero-section h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.hero-section .cta-btn {
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero-section .cta-btn:hover {
+    background-color: #16a085;
+}
+
+/* Product Section */
+.products-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.products-section h2 {
+    font-size: 2.5rem;
+    color: #2C3E50;
+    margin-bottom: 40px;
+}
+
+.product-card {
+    display: inline-block;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Hiệu ứng phóng to khi hover */
+}
+
+.product-card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.product-card .product-info {
+    padding: 20px;
+}
+
+.product-card .product-info h3 {
+    font-size: 1.6rem;
+    color: #2C3E50;
+}
+
+.product-card .product-info p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+}
+
+.product-card .price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 15px 0;
+}
+
+.product-card .add-to-cart-btn {
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.product-card .add-to-cart-btn:hover {
+    background-color: #16a085;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #ecf0f1;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 2.5rem;
+    color: #2C3E50;
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    display: inline-block;
+    width: 45%;
+    background-color: #fff;
+    padding: 30px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.testimonial p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.testimonial .author {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2C3E50;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design (cho chỉnh sửa cho thiết bị di động) */
+@media screen and (max-width: 768px) {
+    .hero-section h2 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .product-card {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .testimonial {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px 0;
+    }
+}
